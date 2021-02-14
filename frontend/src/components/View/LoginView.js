@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, TextField, Button, Box, Paper } from '@material-ui/core';
+import { Grid, TextField, Button, Paper } from '@material-ui/core';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import LockIcon from '@material-ui/icons/Lock';
-import { Header } from '../UI';
 
 const LoginView = () => {
 	return (
 		<Grid className="login">
-			<Header authorized={false} />
 			<Paper className="login-box">
 				<Grid container direction="row" className="login-container">
 					<Grid className="login-text">로그인</Grid>
@@ -24,7 +22,7 @@ const LoginView = () => {
 						<Link to="/">
 							<Button
 								variant="outlined"
-								color="primary"
+								color="secondary"
 								className="login-btn"
 							>
 								로그인
